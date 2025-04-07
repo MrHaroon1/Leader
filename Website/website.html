@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <h1 class="logo">LeaDers</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <img class="icon" src="icons/xmark-solid.svg"  onclick=" closemenu()"> -->
+                </ul>
+                <!-- <img src="" class="icon" onclick="openmenu"> -->
+            </nav>
+        </div>
+        <div class="user hide-details" id="userbox">
+            <img src="images/mypic.jpg"   onclick="openinfo()">
+            <div class="header-text">
+                <h1 class="wellcome">Well Come</h1> <br>
+                 <h1>to our <span>Website</span> </h1>
+            </div>
+            <div class="info">
+                
+                <h1>Haroon Ahmad</h1>
+                <p>Working as a Programmer at <span>Leaders Inc.</span></p>
+                <p>From: Mandi Bahauddin,Pakistan.</p>
+                <a href="#contact" class="close-icon"><center>Connect to me</center></a>
+                <div class="close-icon"  onclick="closeinfo()">
+                    <a href="#" class="close-icon"><center>Close</center></a></div>
+            </div>
+        </div>
+       
+        </div>
+<!-- --------------about --------------->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/mypic1.jpg" class="aboutimg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtitle">About me</h1><br>
+            <p>I am detail-oriented and highly orgnaized professional with 2 years of experience in computer operations,
+            data managment Proficient in MS Word,Excel and Record keeping. <br>My ability to manage large volumes of data 
+            accurately,combined with my excellent communication skills,makes me confident in my ability 
+            to contribute effictively in a fast-paced, client-focused enviroment.<br>I can contribute to operational effiency and customer 
+            service excellence. </p>
+            <div class="tab-titles">
+        <a class="tab-links active-link" onclick="opentab1()">Skills</a>
+        <a class="tab-links" onclick="opentab2()">Experience</a>
+        <a class="tab-links" onclick="opentab3()">Education</a>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span><h3>Web Development</h3></span><br>Web Designing & Development</li>
+                    <li><span><h3>Record Keeping</h3></span><br>Managment and Record Keeping</li>
+                    <li><span><h3>Architect</h3></span><br>Design 2D & 3D House Plan</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span><h3>2024 - 2025</h3></span><br>Worked as a Documents and Record keeping Officer at Punjab Developers Mandi Bahauddin.</li>
+                    <li><span><h3>2021 - 2022</h3></span><br>Worked as a Computer Instructor at Punjab Computer College Mandi Bahauddin.</li>
+                    
+                </ul>
+            </div>
+            <!-- <marquee>Currently 2 Years Experienced in Computer Field.</marquee> -->
+            <div class="tab-contents"  id="education">
+                <ul>
+                    <li><span><h3>2018</h3></span><br>Matric from Goverment high School Rukkan.</li>
+                    <li><span><h3>2021</h3></span><br>Intermediate from Punjab College Phalia.</li>
+                    <li><span><h3>2023</h3></span><br>BB(IT)  form Virtual Univeristy, M.B.Din.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- --------services------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle"><center>My Services</center></h1><br><br>
+        <div class="services-list">
+
+             <div>     <h2>Web Designer</h2> 
+            <p>In this service we provide you a fully customized and responsive website according to your need.
+                So if you are looking for a website developer who make
+                 a website to make your work easy we are here for you.<br><a href="#contact">Contact us</a></p>        
+                <a href="#">Learn more</a>
+            </div>
+            <div>     <h2>Architecture</h2> 
+                <p>We provide Complete House Plan in 2D & 3D Design.If you are Looking for a House <br>Plan Designer
+                    (Architect) or you have any query about your dream House Plan you can <br><span><a href="#contact">Contact Us</a></span></p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>     <h2>Record Keeping <br>& Maintinence</h2> 
+                    <p>We are Offering you Record / Data Managment System. <br> Where our Team will manage your data and keep your record safe.
+                If you want to manage your data and make it secure yu can <br>
+                <span><a href="#contact">Contact Us</a></span>
+                    </p>
+                    <a href="#">Learn more</a>
+                    </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------portfolio-------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle"><center>My Work</center></h1><br><br>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/mypic2.jpg" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus est molestias deserunt explicabo cumque delectus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/mypic3.jpeg" >
+                <div class="layer">
+                    <h3> Music App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus est molestias deserunt explicabo cumque delectus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/mypic4.jpeg" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus est molestias deserunt explicabo cumque delectus.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ------------------contact------------------------- -->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p ><img src="images/email.png" class="img"> harronahmad00786@gmail.com</p>
+            <p> <img src="images/call.png" class="img">03066447234</p>
+            <div class="social-icons">
+                <a href="http://facebook.com/profile.php?id=100026163635344"><img type="icon" src="images/facebook.png" ></a>
+                <a href="http://whatsapp.com/"><img src="images/whatsapp.jpg" ></a>
+                <a href="http://Instagram.com/haroonahmad01?igsh=MTlicmszbDgxemR4bg=="><img src="images/insta.jpg" ></a>
+            </div>
+<a href="#" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email"required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit </button>
+            </form>
+            <a href="#header"class="back-to-top">Back to Top</a>
+            
+        </div>
+        
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Team <br>codewithaliraza
+    </p>
+</div>
+</div>
+
+
+<script>
+
+let x = document.getElementsByClassName('tab-contents');
+let y = document.getElementsByClassName('tab-links')
+function opentab1()
+{
+    x[0].style.display = "block";
+    x[1].style.display = "none";
+    x[2].style.display = "none";
+    y[0].style.borderBottom = "#ff004f 5px groove";
+    y[1].style.borderBottom = "none";
+    y[2].style.borderBottom = "none";
+}
+function opentab2()
+{
+    x[1].style.display = "block";
+    x[0].style.display = "none";
+    x[2].style.display = "none";
+    y[0].style.borderBottom = "none";
+    y[1].style.borderBottom = "#ff004f 5px groove";
+    y[2].style.borderBottom = "none";
+}
+function opentab3()
+{
+    x[2].style.display = "block";
+    x[1].style.display = "none";
+    x[0].style.display = "none";
+    y[0].style.borderBottom = "none";
+    y[1].style.borderBottom = "none";
+    y[2].style.borderBottom = "#ff004f 5px groove";
+}
+
+let userbox = document.getElementById("userbox");
+    function openinfo(){
+        userbox.classList.remove("hide-details");
+    }
+
+    function closeinfo(){
+        userbox.classList.add("hide-details");
+    }
+
+</script>
+
+</body>
+</html>
